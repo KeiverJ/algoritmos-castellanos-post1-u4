@@ -124,13 +124,13 @@ reporta presencia.
 
 ## Conclusión: cuándo usar cada estructura
 
-| Criterio                    | BloomFilter          | HashSet                  |
-| --------------------------- | -------------------- | ------------------------ |
-| Memoria disponible limitada | ✅ Recomendado       | ❌ Costoso               |
-| Exactitud requerida al 100% | ❌ Falsos positivos  | ✅ Exacto                |
-| Throughput de consulta      | ✅ Alta (22K ops/ms) | ✅ Más alta (26K ops/ms) |
-| Conjunto muy grande (>10M)  | ✅ Escalable         | ❌ Puede agotar RAM      |
-| Caché de pre-filtrado       | ✅ Ideal             | ❌ Excesivo              |
+| Criterio                    | BloomFilter       | HashSet               |
+| --------------------------- | ----------------- | --------------------- |
+| Memoria disponible limitada | Recomendado       | Costoso               |
+| Exactitud requerida al 100% | Falsos positivos  | Exacto                |
+| Throughput de consulta      | Alta (22K ops/ms) | Más alta (26K ops/ms) |
+| Conjunto muy grande (>10M)  | Escalable         | Puede agotar RAM      |
+| Caché de pre-filtrado       | Ideal             | Excesivo              |
 
 **BloomFilter** es la elección correcta cuando la memoria es limitada,
 se tolera una pequeña tasa de falsos positivos, y el conjunto es
