@@ -1,0 +1,3 @@
+Benchmark                          Mode  Cnt      Score     Error   Units
+MembershipBenchmark.bloomQuery    thrpt    5  22287.475 ± 430.709  ops/ms
+MembershipBenchmark.hashSetQuery  thrpt    5  26259.110 ± 264.243  ops/ms
